@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ember Casas</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/de7y9vclv/image/upload/v1767108814/Ember_Homes_fxdayq_celndi.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="index.html" class="flex items-center">
+                    <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767108814/Ember_Homes_fxdayq_celndi.png" alt="Ember Casas Logo" class="mr-3 h-6 sm:h-9 hover:transition-transform hover:scale-105 duration-300">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white" style="color: #EBC14D;">Ember <span style="font-weight: 400;">Casas</span></span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <a href="tel:(404) 996-0363" class="bg-[#EBC14D] text-black font-semibold px-4 py-2 rounded-md hover:bg-[#f2ca61] transition-colors duration-300">(404) 996-0363</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero-section" style="background-image: url('https://res.cloudinary.com/de7y9vclv/image/upload/v1767127757/ember-casas-hero_ayrs4c.jpg');">
+           
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>Sell Your House Today With Ember Homes</h1>
+                    <p>No Commissions Or Fees, Sell Your House “AS IS”, Leave The Tenants To Us, No Realtors Needed!</p>
+                </div>
+
+                <div class="form-card">
+                    <div class="logo-circle">
+                        <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767108814/Ember_Homes_fxdayq_celndi.png" alt="logo">
+                    </div>
+                    <div class="progress-row">
+                        <div class="step">Step 1 of 2</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:50%"></div>
+                        </div>
+                    </div>
+
+                    <form class="lead-form" action="" novalidate>
+                        <div class="form-step" data-step="1">
+                            <label for="name">Name <span class="req">*</span></label>
+                            <input id="name" name="name" type="text" placeholder="Full Name" required>
+
+                            <label for="email">Email <span class="req">*</span></label>
+                            <input id="email" name="email" type="email" placeholder="Email Address" required>
+
+                            <label for="phone">Phone Number <span class="req">*</span></label>
+                            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" required>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn-primary btn-next">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2" aria-hidden="true">
+                            <label for="street">Street Address <span class="req">*</span></label>
+                            <input id="street" name="street" type="text" placeholder="Street address" required>
+
+                            <label for="city">City <span class="req">*</span></label>
+                            <input id="city" name="city" type="text" placeholder="City" required>
+
+                            <label for="state">State / Province <span class="req">*</span></label>
+                            <input id="state" name="state" type="text" placeholder="State / Province" required>
+
+                            <label for="zip">Zip / Postal Code <span class="req">*</span></label>
+                            <input id="zip" name="zip" type="text" placeholder="Zip / Postal Code" required>
+
+                            <label for="timeline">When do you want to finalize the sale of your home? <span class="req">*</span></label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Select an option</option>
+                                <option value="ASAP">ASAP</option>
+                                <option value="1month">1 month</option>
+                                <option value="3plus">3+ months</option>
+                            </select>
+
+                            <label for="reason">Reason for selling</label>
+                            <textarea id="reason" name="reason" rows="3" placeholder="Tell us briefly why you're selling"></textarea>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn-secondary btn-prev">Previous</button>
+                                <button type="submit" class="btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="how-it-works-section">
+            <div class="how-container">
+                <div class="how-images">
+                    <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127758/ember-homes-img-9_qs0jxc.png" alt="House" class="img-main">
+                </div>
+
+                <div class="how-features">
+                    <h2>Why Sell Your House To Us At Ember Homes?</h2>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>EXPERIENCED</h3>
+                                <p>We have over 10 years of experience buying properties Nationwide.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>RELIABLE</h3>
+                                <p>We're local investors, we will treat you professionally and with respect.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>FAST</h3>
+                                <p>We can close quickly. Sometimes as fast as 3 days.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>WE PAY CASH</h3>
+                                <p>We pay cash. No banks, realtors, inspections necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-wrap">
+                        <a class="cta-btn" href="#">Get Your Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process-section">
+            <div class="process-container">
+                <h2>Our Easy & Hassle-Free Process</h2>
+
+                <div class="process-cards">
+                    <article class="process-card">
+                        <div class="icon-wrap">
+                            <div class="icon-circle"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127756/process-1_zpzzpz.png" alt="Talk icon"></div>
+                        </div>
+                        <h4>Talk</h4>
+                        <p>Call at (404)-996-0363 or fill out the form and we’ll call you. Our staff will ask you a few questions to learn more about the value of the house and your situation.</p>
+                    </article>
+
+                    <article class="process-card">
+                        <div class="icon-wrap">
+                            <div class="icon-circle"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127756/process-2_moc9s4.png" alt="Offers icon"></div>
+                        </div>
+                        <h4>Offers</h4>
+                        <p>We will evaluate the house using advanced purchase tools and make a cash offer over the phone. There are no hidden fees or deductions at closing.</p>
+                    </article>
+
+                    <article class="process-card">
+                        <div class="icon-wrap">
+                            <div class="icon-circle"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127756/process-3_vxvd1e.png" alt="Close icon"></div>
+                        </div>
+                        <h4>Close</h4>
+                        <p>Once the contract is signed and returned, you’ll set a closing date to sign the title company. Then, you receive your funds in bank check, money wire, or certified funds.</p>
+                    </article>
+                </div>
+
+                <div class="process-cta">
+                    <a class="process-btn" href="#">Get Your Free Quote</a>
+                </div>
+            </div>
+        </section>
+        <section class="nationwide-section">
+            <div class="nationwide-container">
+                <div class="nationwide-left">
+                    <h4>We Buy Houses</h4>
+                    <h2>Nationwide</h2>
+                    <div class="map-wrap">
+                        <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127758/map_USZIP_nezsy4.png" alt="US map">
+                    </div>
+                </div>
+
+                <div class="nationwide-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <!-- clock icon -->
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#EBC14D" stroke-width="1.5"/><path d="M12 7v6l4 2" stroke="#EBC14D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="info-body">
+                            <h3>HOW FAST CAN YOU SELL MY HOUSE?</h3>
+                            <p><strong style="color: #000;">AS FAST AS YOU WANT TO!</strong> At Ember Homes, we never say no to a home that is not in perfect condition. We buy all types of houses to help you close quickly and get the most money for your home!</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <!-- lock icon -->
+                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="11" width="16" height="9" rx="2" stroke="#EBC14D" stroke-width="1.5"/><path d="M8 11V8a4 4 0 018 0v3" stroke="#EBC14D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </div>
+                        <div class="info-body">
+                            <h3>ARE THERE ANY OBLIGATIONS?</h3>
+                            <p><strong style="color: #000;">NO OBLIGATIONS!</strong> Ember Homes does not force you to accept an offer. We give you a FAIR offer and you decide whether to accept it. Call us to learn more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="compare-section">
+            <div class="compare-container">
+                <h2 class="compare-title">Ember Homes VS Others</h2>
+
+                <div class="compare-wrap" aria-label="Comparison table, swipe horizontally on small screens">
+                    <div class="compare-table">
+                        <div class="compare-col compare-col-left">
+                            <div class="compare-row">COMMISIONS</div>
+                            <div class="compare-row">REPAIR COSTS</div>
+                            <div class="compare-row">CLOSING COSTS</div>
+                            <div class="compare-row">AVG. DAYS TO CLOSE</div>
+                            <div class="compare-row"># OF SHOWINGS</div>
+                            <div class="compare-row">AS-IS SALE</div>
+                        </div>
+
+                        <div class="compare-col compare-col-center">
+                            <div class="compare-row">Ember Homes</div>
+                            <div class="compare-row"><strong>$0</strong></div>
+                            <div class="compare-row"><strong>$0</strong></div>
+                            <div class="compare-row"><strong>$0</strong></div>
+                            <div class="compare-row"><strong>1 week!</strong></div>
+                            <div class="compare-row"><strong>0</strong></div>
+                            <div class="compare-row"><strong>Yes</strong></div>
+                        </div>
+
+                        <div class="compare-col compare-col-right">
+                            <div class="compare-row">Traditional</div>
+                            <div class="compare-row">$2,500+</div>
+                            <div class="compare-row">$500+</div>
+                            <div class="compare-row">$1,000+</div>
+                            <div class="compare-row">1 month+</div>
+                            <div class="compare-row">Realtor Decides</div>
+                            <div class="compare-row">No</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compare-cta">
+                    <a class="cta-btn" href="#">Get Your Free Quote</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+                <h2 class="testimonials-title">Why Do Our Clients Love Us?</h2>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="avatar"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127757/shutterstock_338566106_sfwesc.jpg" alt="Client photo"></div>
+                        <div class="stars" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                        </div>
+                        <blockquote class="quote">“I had signed a bad mortgage for my house and as a result, I was unable to afford payments at my house. Ember Homes helped me out of this situation by giving me a good cash offer for my house!”</blockquote>
+                        <div class="client-name">Joe McKenzie</div>
+                        <div class="client-location">Atlanta, GA</div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="avatar"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127757/shutterstock_530113579_pooqyd.jpg" alt="Client photo"></div>
+                        <div class="stars" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                        </div>
+                        <blockquote class="quote">“My husband and I loved our house, but the surrounding areas become bad due to frequent break-ins. We wanted to move to another location ASAP, and Ember Homes gave us a cash offer!”</blockquote>
+                        <div class="client-name">Jed &amp; Sally</div>
+                        <div class="client-location">Brunswick, SC</div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="avatar"><img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767127757/shutterstock_146441435_z6m0jm.jpg" alt="Client photo"></div>
+                        <div class="stars" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 .9l3.09 6.26L22 8.63l-5 4.87L18.18 22 12 18.73 5.82 22 7 13.5 2 8.63l6.91-1.47L12 .9z" fill="#EBC14D"/></svg>
+                        </div>
+                        <blockquote class="quote">“I had inherited a house in Cookeville, TN from my uncle, but it was too far away from my job and I couldn't afford to move. Ember Homes was able to help me out by giving me an all-cash offer for the house!”</blockquote>
+                        <div class="client-name">Charles &amp; Samantha</div>
+                        <div class="client-location">Cookeville, TN</div>
+                    </article>
+                </div>
+
+                <div class="testimonials-cta">
+                    <a class="cta-btn" href="#">Get Your Free Quote</a>
+                </div>
+            </div>
+        </section>
+      <section class="hero-section" style="background-image: url('https://res.cloudinary.com/de7y9vclv/image/upload/v1767127757/ember-homes-img-7_bvy2yz.jpg');">
+            <div class="overlay"></div>
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1>We Buy Houses at Any Price in any condition!</h1>
+                    <p>No Commissions Or Fees, Sell Your House “AS IS”, Leave The Tenants To Us, No Realtors Needed!</p>
+
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>Avoid Paying Unnecessary Fees</h3>
+                                <p>Avoid paying an agent thousands in unnecessary fees. Ember Homes has helped hundreds of homeowners sell their houses fast.</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-feature">
+                            <span class="chev" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 6l6 6-6 6" stroke="#EBC14D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/></svg>
+                            </span>
+                            <div>
+                                <h3>No Need For Remodeling Or Repairs</h3>
+                                <p>When you choose to work with Ember Homes, there’s no need to remodel or repair your house. We’ll handle repairs, disposals, and cleaning!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card">
+                    <div class="logo-circle">
+                        <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767108814/Ember_Homes_fxdayq_celndi.png" alt="logo">
+                    </div>
+                    <div class="progress-row">
+                        <div class="step">Step 1 of 2</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:50%"></div>
+                        </div>
+                    </div>
+
+                    <form class="lead-form" action="" novalidate>
+                        <div class="form-step" data-step="1">
+                            <label for="f2-name">Name <span class="req">*</span></label>
+                            <input id="f2-name" name="name" type="text" placeholder="Full Name" required>
+
+                            <label for="f2-email">Email <span class="req">*</span></label>
+                            <input id="f2-email" name="email" type="email" placeholder="Email Address" required>
+
+                            <label for="f2-phone">Phone Number <span class="req">*</span></label>
+                            <input id="f2-phone" name="phone" type="tel" placeholder="(555) 555-5555" required>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn-primary btn-next">Next</button>
+                            </div>
+                        </div>
+
+                        <div class="form-step" data-step="2" aria-hidden="true">
+                            <label for="f2-street">Street Address <span class="req">*</span></label>
+                            <input id="f2-street" name="street" type="text" placeholder="Street address" required>
+
+                            <label for="f2-city">City <span class="req">*</span></label>
+                            <input id="f2-city" name="city" type="text" placeholder="City" required>
+
+                            <label for="f2-state">State / Province <span class="req">*</span></label>
+                            <input id="f2-state" name="state" type="text" placeholder="State / Province" required>
+
+                            <label for="f2-zip">Zip / Postal Code <span class="req">*</span></label>
+                            <input id="f2-zip" name="zip" type="text" placeholder="Zip / Postal Code" required>
+
+                            <label for="f2-timeline">When do you want to finalize the sale of your home? <span class="req">*</span></label>
+                            <select id="f2-timeline" name="timeline" required>
+                                <option value="">Select an option</option>
+                                <option value="ASAP">ASAP</option>
+                                <option value="1month">1 month</option>
+                                <option value="3plus">3+ months</option>
+                            </select>
+
+                            <label for="f2-reason">Reason for selling</label>
+                            <textarea id="f2-reason" name="reason" rows="3" placeholder="Tell us briefly why you're selling"></textarea>
+
+                            <div class="form-buttons">
+                                <button type="button" class="btn-secondary btn-prev">Previous</button>
+                                <button type="submit" class="btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container flex items-center justify-between max-w-screen-xl mx-auto px-4 py-6">
+            <div class="footer-left flex items-center gap-3">
+                <img src="https://res.cloudinary.com/de7y9vclv/image/upload/v1767108814/Ember_Homes_fxdayq_celndi.png" alt="Ember Casas Logo" class="h-10">
+                <div>
+                    <div style="color: #EBC14D; font-weight: 700;">Ember <span style="font-weight:400;">Casas</span></div>
+                    <p class="footer-tagline" style="font-size:0.9rem; margin:0;">We buy houses nationwide — fast and hassle-free.</p>
+                </div>
+            </div>
+
+            <div class="footer-right text-right">
+                <p style="margin:0;">&copy; <span id="current-year">2026</span> Ember Casas. All rights reserved.</p>
+                <a href="privacy-policy.html" style="color:#374151; text-decoration:underline;">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
