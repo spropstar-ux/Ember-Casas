@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Sending...';
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Enviando...';
     }
 
     const get = name => form.querySelector(`[name="${name}"]`);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (phoneEl) {
       const phoneDigits = phoneEl.value.replace(/\D/g, '');
       if (phoneDigits.length !== 10) {
-        Swal.fire({ title: 'Invalid Phone', text: 'Please enter a valid 10-digit phone number.', icon: 'warning', confirmButtonColor: '#ae2535' });
+          Swal.fire({ title: 'Teléfono inválido', text: 'Por favor ingrese un número de teléfono válido de 10 dígitos.', icon: 'warning', confirmButtonColor: '#ae2535' });
         reset();
         return;
       }
@@ -64,14 +64,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const result = await res.json();
 
       if (result.status === 'success') {
-        const userName = data.name.split(' ')[0] || 'Friend';
-        Swal.fire({ title: `Thank you, ${userName}!`, html: `<p style="font-size:15px;">We’ve received your details.<br>Our team will contact you shortly.</p><p style="margin-top:18px;font-weight:bold;">– Ember Casas</p>`, icon: 'success', confirmButtonColor: '#ae2535' });
+        const userName = data.name.split(' ')[0] || 'Amigo';
+          Swal.fire({ title: `¡Gracias, ${userName}!`, html: `<p style="font-size:15px;">Hemos recibido sus datos.<br>Nuestro equipo se pondrá en contacto con usted en breve.</p><p style="margin-top:18px;font-weight:bold;">– Ember Casas</p>`, icon: 'success', confirmButtonColor: '#EBC14D' });
         form.reset();
       } else {
         throw new Error('Submission failed');
       }
     } catch (err) {
-      Swal.fire({ title: 'Error', text: err.message, icon: 'error', confirmButtonColor: '#ae2535' });
+        Swal.fire({ title: 'Error', text: err.message, icon: 'error', confirmButtonColor: '#EBC14D' });
     } finally {
       reset();
     }
@@ -104,6 +104,14 @@ document.addEventListener('DOMContentLoaded', function () {
       if (submitBtn) {
         submitBtn.style.display = (current === steps.length - 1) ? '' : 'none';
       }
+      // Update the progress label and bar for this form's card
+      const card = form.closest('.form-card');
+      if (card) {
+        const stepLabel = card.querySelector('.progress-row .step');
+        const progressBar = card.querySelector('.progress-row .progress-bar');
+        if (stepLabel) stepLabel.textContent = `Paso ${index + 1} de ${steps.length}`;
+        if (progressBar) progressBar.style.width = `${Math.round(((index + 1) / steps.length) * 100)}%`;
+      }
     }
 
     // initialize
@@ -115,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!validateRequiredFields(step)) return;
         const phone = step.querySelector('input[type="tel"]');
         if (phone && phone.value.trim() && !phoneRegex.test(phone.value.trim())) {
-          Swal.fire({ title: 'Invalid Phone', text: 'Please enter a valid US phone number (e.g. 555-555-5555).', icon: 'warning', confirmButtonColor: '#ae2535' });
+          Swal.fire({ title: 'Teléfono inválido', text: 'Por favor ingrese un número de teléfono válido de EE. UU. (ej. 555-555-5555).', icon: 'warning', confirmButtonColor: '#ae2535' });
           phone.focus();
           return;
         }
